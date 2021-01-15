@@ -1,0 +1,577 @@
+/**
+ * @name MinimalCord
+ * @author Gibbu#1211
+ * @version 2.0.0
+ * @description Changes Discord enough to give it a fresh feel while also making it darker. Supports both Light and Dark themes.
+ * @source https://github.com/DiscordStyles/MinimalCord
+ * @website https://www.gibbu.me
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url("https://discordstyles.github.io/MinimalCord/base.css");
+
+:root {
+    /*
+        Accent variable
+        Use this website: https://htmlcolorcodes.com/color-picker/
+        to get your desired RGB numbers. Then simply put each number in their respective area.
+        R,G,B
+    */
+    --accent: 41, 143, 255;
+
+    --message-padding: 10px; /* Spacing in the messages. MUST END IN px | DEFAULT: 10px */
+    --message-spacing: 10px; /* Spacing around the messages. MUST END IN px | DEFAULT: 10px */
+
+    /*
+        To use a custom font. Visit https://fonts.google.com and select one to your liking.
+        Now just follow this tutorial: https://imgur.com/a/CNbw7xC
+    */
+    --font: 'Roboto';
+}
+/* Compressed Search Bar */
+.search-2oPWTC .searchBar-3dMhjb {width:25px;transition-duration:600ms;}
+.search-2oPWTC .searchBar-3dMhjb:hover {width:250px !important;}
+.search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb {width: 250px !important;}
+.activityUserPopout-2yItg2 {
+        background-color: rgb(28,28,28);
+}
+
+/* Solid reply */
+.repliedTextPreview-2NBljf {
+  opacity: 100 !important;
+}
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:31:12 PM
+ * Created by Nyria#0001 (265924886461939712)
+ * Snippet ID: 781978049570144257
+ */
+.profileBadges-2vWUYb { display: flex; flex-wrap: wrap; }
+.profileBadgeWrapper-1rGSsp { padding-bottom: 7px; }
+/** 781978049570144257 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:31:17 PM
+ * Created by botato#6883 (440990343899643943)
+ * Snippet ID: 781646795901763584
+ */
+.avatarWrapper-3H_478 rect[mask="url(#svg-mask-status-online-mobile)"] {
+  mask: url(#svg-mask-status-online);
+  height: 16px;
+  y: 60px;
+}
+
+.avatar-3uk_u9 rect[mask="url(#svg-mask-status-online-mobile)"] {
+  mask: url(#svg-mask-status-online);
+  height: 10px;
+  y: 22px;
+}
+
+foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"]{mask:url(#svg-mask-avatar-status-round-80)}
+foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"]{mask:url(#svg-mask-avatar-status-round-32)}
+/** 781646795901763584 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:36:00 PM
+ * Created by Sourrr_#3016 (339451946253549569)
+ * Snippet ID: 778007250840191056
+ */
+/*-------Blur spoiler-------*/
+/*blurs spoiler text instead of having a black bar over it*/
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9, .contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover, .contents-2mQqc9 .spoilerText-3p6IlD{
+  background:rgb(130,130,130,0.1);
+  /*adds minor grey-ish filter to differentiate spoilted text from normal text*/
+  border-radius: 7px;
+  /*adds rounded edges for the filter described above*/
+}
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9>.inlineContent-3ZjPuv{
+  filter: blur(3px);
+  /*adds blur filter when text is left alone*/
+  opacity: 1;
+  /*makes blurred text fully opaque*/
+}
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9:hover>.inlineContent-3ZjPuv{
+  filter:none;
+  /*removes blur filter on hover*/
+  opacity: 1;
+  /*makes text opacity look like normal, non-spoiled text on hover*/
+}
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:37:35 PM
+ * Created by Creation's#0001 (209830981060788225)
+ * Snippet ID: 777246112184270849
+ */
+.userInfoSectionHeader-CBvMDh,
+.note-QfFU8y {
+   display: none;
+}
+
+.infoScroller-3EYYns>.userInfoSection-2acyCx:first-of-type {
+   margin-top: -45px;
+}
+
+.topSectionNormal-2-vo2m {
+   z-index: 10;
+}
+/** 777246112184270849 */
+
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:46:31 PM
+ * Created by Hoofer#0001 (547951620235984906)
+ * Snippet ID: 763119704478842932
+ */
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.powercord-codeblock-table > tr > td:nth-child(1) {
+    background: linear-gradient(45deg, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+/** 763119704478842932 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:46:41 PM
+ * Created by mo#9999 (682735971392815124)
+ * Snippet ID: 763106901948628994
+ */
+.wrapper-2aW0bm,.button-1ZiXG9.selected-LCBEAU,.button-1ZiXG9,.powercord-snippet-apply:not(.applied) div:hover,.powercord-snippet-apply div  {
+    border-radius: 24px !important;
+    }
+/** 763106901948628994 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:46:49 PM
+ * Created by Chromus#4761 (511758610720751626)
+ * Snippet ID: 763101719386390528
+ */
+.content-3at_AU,  .layout-2DM8Md {
+  border-radius: 50px;
+}
+/** 763101719386390528 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:47:57 PM
+ * Created by The Arcane Brony#9669 (84022289024159744)
+ * Snippet ID: 762051497466134578
+ */
+/*fix emoji suggestions not being scrollable*/
+.autocompleteInner-zh20B_ {
+    overflow-y: auto;
+    max-height: 75vh;
+}
+/** 762051497466134578 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:49:55 PM
+ * Created by LuckFire#4800 (399416615742996480)
+ * Snippet ID: 761720617429893140
+ */
+.connectedAccount-36nQx7 {
+   background-color: var(--background-tertiary);
+   border: 0 !important;
+}
+/** 761720617429893140 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:50:33 PM
+ * Created by Kanin#0001 (173237945149423619)
+ * Snippet ID: 761398967577083954
+ */
+/* Better RTC Connection popout */
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
+     left: 72px !important;
+}
+.container-2x5lvQ {
+     width: 240px;
+     box-shadow: none;
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ header {
+     background-color: var(--toast-header);
+}
+.layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] .container-2x5lvQ section {
+     background-color: var(--deprecated-panel-background);
+}
+.container-2x5lvQ section p:nth-of-type(1) {
+     font-size: 0;
+}
+.container-2x5lvQ section p:nth-of-type(2) {
+     display: none;
+}
+.container-2x5lvQ section strong {
+     font-size: 14px;
+     white-space: pre;
+}
+.container-2x5lvQ section strong::before {
+     font-weight: normal;
+}
+.container-2x5lvQ section strong:nth-of-type(1)::before {
+     content: 'Server: ';
+}
+.container-2x5lvQ section strong:nth-of-type(2)::before {
+     content: 'Average Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(3)::before {
+     content: 'Last Ping: ';
+}
+.container-2x5lvQ section strong:nth-of-type(4)::before {
+     content: 'Packet Loss: ';
+}
+/** 761398967577083954 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 27, 2020 at 11:51:54 PM
+ * Created by botato#6883 (440990343899643943)
+ * Snippet ID: 755598141990109356
+ */
+div[aria-label="USER_SETTINGS"] .info-1VyQPT:last-child > div:last-child::after {
+  content: "Ghoul On Top :)";
+  display: block;
+}
+
+/**
+ * Snippet from #css-snippets applied the Nov 28, 2020 at 12:12:03 AM
+ * Created by ekto#1000 (447353865122086932)
+ * Snippet ID: 772777802196844555
+ */
+.activityUserPopout-2yItg2 {
+        background-color: rgb(28,28,28);
+}
+/** 772777802196844555 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 28, 2020 at 1:05:34 PM
+ * Created by snapperito#0001 (431883840483491850)
+ * Snippet ID: 781304865371455499
+ */
+.header-23xsNx{
+  user-select:none;
+}
+/** 781304865371455499 */
+
+
+
+/**
+ * Snippet from #css-snippets applied the Nov 30, 2020 at 1:39:00 AM
+ * Created by robigan#1634 (315526915828219906)
+ * Snippet ID: 767644968592080906
+ */
+/* Updated version of the Hide Nitro Gift and GIF buttons with support for Stickers button */
+.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN.noFocus-2C7BQj .button-3AYNKb.button-318s1X {display: none;}
+/** 767644968592080906 */
+
+/**
+ * Snippet from #css-snippets applied the Nov 30, 2020 at 1:40:14 AM
+ * Created by Tropical#4355 (254362351170617345)
+ * Snippet ID: 766438640313958470
+ */
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style] {
+    height:auto !important;
+    width:auto !important;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active {
+    height:160px !important;
+    width:160px !important;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:after {
+    content:'1 blocked sticker - Show Sticker';
+    color:var(--text-link);
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active:after {
+    content:none;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:hover:after {
+    text-decoration:underline;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style] .lottieCanvas-1W7L-f,
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style] .pngImage-33yLRP {
+    display:none;
+}
+
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .lottieCanvas-1W7L-f,
+.wrapper-2a6GCs .assetWrapper-3GNt0z[style]:active .pngImage-33yLRP {
+    display:block;
+}
+/** 766438640313958470 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 2, 2020 at 11:36:34 PM
+ * Created by Chromus#4761 (511758610720751626)
+ * Snippet ID: 783889353960718373
+ */
+/* Better User Popouts */
+/* Big Modal */
+.root-SR8cQa > .topSectionSpotify-1lI0-P, .root-SR8cQa > .topSectionPlaying-1J5E4n, .root-SR8cQa > .topSectionStreaming-1Tpf5X, .root-SR8cQa > .topSectionXbox-3fWLjS { background: var(--background-tertiary) !important;}
+.activityProfile-2bJRaP { border-radius: 5px; margin: 0 13px 13px 13px;}
+.topSectionPlaying-1J5E4n > .headerFill-adLl4x > .activityProfile-2bJRaP { background: #7289DA !important; box-shadow: 4px 4px 0px #46599c;}
+.topSectionSpotify-1lI0-P > .headerFill-adLl4x > .activityProfile-2bJRaP { background: #1DB954 !important;  box-shadow: 4px 4px 0px #11923e;}
+.topSectionStreaming-1Tpf5X > .headerFill-adLl4x > .activityProfile-2bJRaP { background: #593695 !important; box-shadow: 4px 4px 0px #47287c;}
+.topSectionXbox-3fWLjS > .headerFill-adLl4x > .activityProfile-2bJRaP { background: #107C10 !important; box-shadow: 4px 4px 0px #095509;}
+.actionButton-3W1xZa { background: var(--background-primary) !important;}
+/* Small Modal */
+.headerNormal-T_seeN, .headerPlaying-j0WQBV, .headerStreaming-2FjmGz, .headerSpotify-zpWxgT, .headerXbox-3G-4PF { background: var(--background-tertiary) !important;}
+.activityUserPopout-2yItg2 { border-radius: 5px; margin: 0 8px 15px 8px; padding: 10px;}
+.headerPlaying-j0WQBV > .activityUserPopout-2yItg2 { background: #7289DA !important; box-shadow: 4px 4px 0px #46599c;}
+.headerSpotify-zpWxgT > .activityUserPopout-2yItg2 { background: #1DB954 !important; box-shadow: 4px 4px 0px #11923e;}
+.headerStreaming-2FjmGz > .activityUserPopout-2yItg2 { background: #593695 !important; box-shadow: 4px 4px 0px #47287c;}
+.headerXbox-3G-4PF  > .activityUserPopout-2yItg2 { background: #107C10 !important; box-shadow: 4px 4px 0px #095509;}
+/** 783889353960718373 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 4, 2020 at 6:29:36 PM
+ * Created by Broski#1234 (775146063173648395)
+ * Snippet ID: 783868006161186867
+ */
+.theme-dark .avatarUploaderIndicator-2G-aIZ {
+    display: none;
+} /* Removes the useless icon in settings when uploading an avatar*/
+.avatarUploaderInner-2EvNMg {
+    border-radius: unset;
+} /* Makes avatar in settings square*/
+.background-1QDuV2 {
+    border-radius: 20px;
+} /* Changes the border raidius of the user card*/
+
+/** 783868006161186867 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 4, 2020 at 6:29:56 PM
+ * Created by MrTime#6969 (234464614996246529)
+ * Snippet ID: 783729434351894558
+ */
+.jumpToPresentBar-G1R9s6 {
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+}
+/** 783729434351894558 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 9, 2020 at 2:45:27 PM
+ * Created by Chromus#4761 (511758610720751626)
+ * Snippet ID: 786252984476500008
+ */
+.channelTextArea-rNsIhG, .channelTextArea-2VhZ6z {
+  box-shadow: 10px 10px 10px rgba(0,0,0, 0.2);
+}
+/** 786252984476500008 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 19, 2020 at 8:23:44 PM
+ * Created by LuckFire#4800 (399416615742996480)
+ * Snippet ID: 788926699898142740
+ */
+.role-2irmRk {
+    background-color: var(--background-tertiary);
+    border-radius: 4px;
+    border: none;
+    padding: 0 5px 0 8px;
+    height: 25px;
+}
+.role-2irmRk.actionButton-VzECiy {
+    background-color: var(--background-tertiary);
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.role-2irmRk .roleCircle-3xAZ1j {
+    margin-right: 6px;
+    width: 9px;
+    height: 9px;
+}
+/** 788926699898142740 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 19, 2020 at 8:24:59 PM
+ * Created by jai.#9926 (98133204636028928)
+ * Snippet ID: 783707514030129154
+ */
+#BLOCKED-tab, #ALL-tab, #PENDING-tab, #ONLINE-tab {
+    filter: blur(5px);
+    transition: all 0.5s ease-in-out;
+}
+#BLOCKED-tab:hover, #ALL-tab:hover, #PENDING-tab:hover, #ONLINE-tab:hover {
+    filter: blur(0px);
+}
+/** 783707514030129154 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 19, 2020 at 8:25:09 PM
+ * Created by $Ghoul#0001 (780895198749524021)
+ * Snippet ID: 782875210851418113
+ */
+/* Blurs PM's Unless Hovered over or selected, (originally made by LuckFire#4800) but i fixed the top 2 PM boxes not being blured*/
+#private-channels > .content-3YMskv > [role="listitem"]:not(.selected-aXhQR6):not(#private-channels-0) {
+   filter: blur(3px)
+}
+#private-channels > .content-3YMskv > [role="listitem"]:hover:not(#private-channels-0){
+   filter: blur(0);
+   transition: filter .5s
+}
+/** 782875210851418113 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 19, 2020 at 8:26:45 PM
+ * Created by madeleine#0173 (574870314928832533)
+ * Snippet ID: 776959910792396812
+ */
+.scroller-2TZvBN.none-2Eo-qx.scrollerBase-289Jih {
+    filter: blur(10px);
+    transition: .2s cubic-bezier(.2, .11, 0, 1);
+}
+.scroller-2TZvBN.none-2Eo-qx.scrollerBase-289Jih:hover {
+    filter: none;
+    transition: .5s;
+}
+/** 776959910792396812 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 19, 2020 at 8:36:28 PM
+ * Created by oni#4000 (305071855943942146)
+ * Snippet ID: 774032815976742912
+ */
+.titleBar-AC4pGV>*:nth-child(2) {
+background-color: transparent;
+transition: background-color 1s ease-out;
+}
+.titleBar-AC4pGV>*:nth-child(3) {
+background-color: transparent;
+transition: background-color 1s ease-out;
+}
+.titleBar-AC4pGV>*:nth-child(4) {
+background-color: transparent;
+transition: background-color 1s ease-out;
+}
+.titleBar-AC4pGV>*:nth-child(2):hover {
+background-color: #AA2832;
+}
+.titleBar-AC4pGV>*:nth-child(3):hover {
+background-color: #056295;
+}
+.titleBar-AC4pGV>*:nth-child(4):hover {
+background-color: #FDB100;
+}
+/** 774032815976742912 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 19, 2020 at 8:37:19 PM
+ * Created by Fixator10#7133 (131813999326134272)
+ * Snippet ID: 771436074765516881
+ */
+/* Attempt to fix codeblocks */
+.powercord-codeblock-table tr{
+      word-break: inherit !important;
+}
+/** 771436074765516881 */
+
+/**
+ * Snippet from #css-snippets applied the Dec 30, 2020 at 2:41:32 PM
+ * Created by Freeplay#5676 (158296466119458816)
+ * Snippet ID: 791444633149243432
+ */
+.grid-1nZz7S {
+    overflow: visible !important;
+}
+.markup-2BOw-j a {
+    position: relative;
+}
+.markup-2BOw-j a::before {
+    content: attr(href);
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    width: max-content;
+    max-width: 200px;
+    margin: auto;
+
+    background-color: black;
+    color: #dcddde !important;
+    font-weight: 500 !important;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 100;
+    transform: scale(.98) translateY(2px) translateX(-50%);
+    filter: opacity(0);
+    pointer-events: none;
+    box-shadow: var(--elevation-high);
+    transition: transform .1s, filter .1s;
+}
+.markup-2BOw-j a:hover:before {
+    transform: translateX(-50%);
+    filter: opacity(1);
+}
+/** 791444633149243432 */
+
+/**
+ * Snippet from #css-snippets applied the Jan 5, 2021 at 7:28:28 PM
+ * Created by Niko#9000 (491262066813042698)
+ * Snippet ID: 796136446712741908
+ */
+.submenuContainer-2gbm7M [id="user-context-invite-to-server"] {
+    display: none;
+}
+/** 796136446712741908 */
+
+/**
+ * Snippet from #css-snippets applied the Jan 5, 2021 at 7:28:39 PM
+ * Created by sappho#9999 (148929066349625344)
+ * Snippet ID: 796142253797670912
+ */
+[class*='modeSelected'] [class*='name']
+{
+    color: rgba(255, 255, 255) !important;
+    padding-left: 3px
+}
+
+[class*='modeSelected'] [class*='name']:before
+{
+    content: "> ";
+}
+
+/* color unread channels bright green, and add arrows after them */
+[class*='modeUnread'] [class*='name']
+{
+    color: #55c2ff !important;
+    padding-left: 3px
+}
+
+[class*='modeUnread'] [class*='name']:after
+{
+    content: " <";
+}
+/** 796142253797670912 */
+
+/**
+ * Snippet from #css-snippets applied the Jan 11, 2021 at 10:28:13 PM
+ * Created by wathhr#1459 (618554716837773335)
+ * Snippet ID: 797655264199180348
+ */
+/* Bigger avatar on popups */
+.header-QKLPzZ > .avatar-3EQepX.wrapper-3t9DeA {top: 5px;}
+.avatarWrapperNormal-3wFMbf.avatarWrapper-3H_478 > .wrapper-3t9DeA,
+.header-QKLPzZ > .avatar-3EQepX.wrapper-3t9DeA,
+.avatarHint-1qgaV3 {
+    width: 100px !important;
+    height: 100px !important;
+}
+/** 797655264199180348 */
